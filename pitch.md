@@ -60,7 +60,7 @@ Basic structure of a neural network.
 * <p style="color:black;font-size:24px;line-height:1.25;"><b>Sequence data is characterized by long and variable sequence size</b>, e.g. a word or a sentence have different length.</p>
 * <p style="color:black;font-size:24px;line-height:1.25;">Traditional deep networks with separate parameters for each neuron could not generalize to unseen data in a longer sequence.</p>
 
-<img style="width:auto; height:250px;" title="neural_net" src= images/simple_rnn.png>
+<img style="width:auto; height:200px;" title="neural_net" src= images/simple_rnn.png>
 
 
 
@@ -82,7 +82,7 @@ Basic structure of a neural network.
 
 ##### Folded RNN
 
-<img style="width:auto; height:300px;" title="neural_net" src= images/unrolled_rnn_0.png>
+<img style="width:auto; height:300px;" title="neural_net" src= images/unrolled_rNN_0.png>
 <ul>
 <p style="color:black;font-size:28px;line-height:1.25;text-align=left;">The <b>recurrent arrow</b> is modelling the <b>influence that the current value of the input layer outputs can have on its future values</b>. In this graph recurrent connections are between hidden layers. We can unroll this graph to visualise each state in time.
 </p>
@@ -96,7 +96,7 @@ Basic structure of a neural network.
 
 ##### Unfolded RNN
 
-<img style="width:auto; height:400px;" title="neural_net" src= images/unrolled_rnn.png>
+<img style="width:auto; height:400px;" title="neural_net" src= images/unrolled_rNN.png>
 
 <p style="color:black;font-size:18px;line-height:1.0;"> Note: The sequence is not necessarily temporal, it could represent a position in a sentence.
 </p>
@@ -349,7 +349,7 @@ Change the activation function to functions like ReLU. </p></li>
 ##### How do they work?
 <p style="color:black;font-size:32px;line-height:1.0;"><b>1) Forget  2) Store  3) Update  4) Output </b> </p>
 
-<img style="width:auto; height:400px;" title="lstm_main" src= images/lstm_main.png>
+<img style="width:auto; height:400px;" title="lstm_main" src= images/LSTM_main.png>
 
 
 
@@ -358,7 +358,7 @@ Change the activation function to functions like ReLU. </p></li>
 #### Long short-term memory (LSTM)
 <p style="color:black;font-size:32px;line-height:1.0;"><b>1) Forget </b>  2) Store  3) Update  4) Output  </p>
 
-<img style="width:auto; height:400px;" title="lstm_main" src= images/lstm_main.png>
+<img style="width:auto; height:400px;" title="lstm_main" src= images/LSTM_forget.png>
 
 <p style="color:black;font-size:32px;line-height:1.0;">Irrelevant parts of information from the previous state are forgotten.</p>
 
@@ -369,7 +369,7 @@ Change the activation function to functions like ReLU. </p></li>
 #### Long short-term memory (LSTM)
 <p style="color:black;font-size:32px;line-height:1.0;">1) Forget <b>2) Store</b>   3) Update  4) Output  </p>
 
-<img style="width:auto; height:400px;" title="lstm_main" src= images/lstm_main.png>
+<img style="width:auto; height:400px;" title="lstm_main" src= images/LSTM_store.png>
 
 <p style="color:black;font-size:32px;line-height:1.0;">Relevant new information from the 'current' state is saved.</p>
 
@@ -380,7 +380,7 @@ Change the activation function to functions like ReLU. </p></li>
 #### Long short-term memory (LSTM)
 <p style="color:black;font-size:32px;line-height:1.0;">1) Forget 2) Store  <b>3) Update</b>   4) Output  </p>
 
-<img style="width:auto; height:400px;" title="lstm_main" src= images/lstm_main.png>
+<img style="width:auto; height:400px;" title="lstm_main" src= images/LSTM_update.png>
 
 <p style="color:black;font-size:32px;line-height:1.0;">Cell state values are selectively updated.</p>
 
@@ -391,7 +391,7 @@ Change the activation function to functions like ReLU. </p></li>
 #### Long short-term memory (LSTM)
 <p style="color:black;font-size:32px;line-height:1.0;">1) Forget 2) Store  3) Update   <b>4) Output </b></p>
 
-<img style="width:auto; height:400px;" title="lstm_main" src= images/lstm_main.png>
+<img style="width:auto; height:400px;" title="lstm_main" src= images/LSTM_output.png>
 
 <p style="color:black;font-size:32px;line-height:1.25;">The output gate selects what information is sent to the next time step.</p>
 
@@ -627,6 +627,7 @@ loss = tf.nn.softmax_cross_entropy_with_logits(y, predicted)
 
 <ul style="color:black;font-size:32px;line-height:1.5;text-align:left;">
 <li><a href=http://introtodeeplearning.com/2021/slides/6S191_MIT_DeepLearning_L2.pdf> MIT Introduction to Deep Learning: Deep Sequence Modeling</a></li>
+<li>Machine Learning Recurrent Neural Network lecture by Dragana Vuckovic.</li>
 <li><a href=https://colah.github.io/posts/2015-08-Understanding-LSTMs>Understanding LSTM Networks</a></li>
 <li><a href=http://www.bioinf.jku.at/publications/older/2604.pdf>Original publication of the Long Short-Term Memory (LSTM)</a></li>
 <li><a href=https://nlp.stanford.edu/~socherr/EMNLP2013_RNTN.pdf>Recursive deep models for Semantic Compositionality Over a Sentiment Treebank</a></li>
