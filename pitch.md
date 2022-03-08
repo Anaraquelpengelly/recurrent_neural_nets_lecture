@@ -401,7 +401,7 @@ Change the activation function to functions like ReLU. </p></li>
 
 #### LSTM Gradient flow
 
-<img style="width:auto; height:400px;" title="lstm_main" src= images/backprop_lstm.png>
+<img style="width:auto; height:400px;" title="lstm_main" src= images/backprop_LSTM.png>
 
 
 
