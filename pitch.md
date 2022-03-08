@@ -129,8 +129,6 @@ Basic structure of a neural network.
 ---
 
 #### RNNs from Scratch
-
-
 ```Python
 class MyRNNCell(tf.keras.layers.Layer):
     def __init__(self, rnn_units, input_dim, output_dim):
@@ -158,7 +156,7 @@ class MyRNNCell(tf.keras.layers.Layer):
 
 #### RNNs with Tensorflow 
 
-``` Unix
+``` bash
 $pip install tensorflow
 ```
 
