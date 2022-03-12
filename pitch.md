@@ -30,7 +30,25 @@
 
 ### Before we start, a survey...
 
-<img title="mentimeter QR (will appear on the day of the lecture)" src=mentimeter_q0.png  width="300" height="300">
+<img title="mentimeter QR start" src=images/mentimeter_qr_code_0.png  width="300" height="300">
+
+
+
+---
+
+### Survey results
+
+<div style='position: relative; padding-bottom: 56.25%; padding-top: 35px; height: 0; overflow: hidden;'><iframe sandbox='allow-scripts allow-same-origin allow-presentation' allowfullscreen='true' allowtransparency='true' frameborder='0' height='315' src='https://www.mentimeter.com/embed/62653c44e847b4f89e84316fa6de53d8/80f0fc3888d9' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' width='420'></iframe></div>
+
+
+
+---
+
+#### Reminder: what are Neural Networks?
+
+<img style="width:auto; height:250px;" title="perceptron" src=images/perceptron.png>
+
+Basic structure of a perceptron. 
 
 
 
@@ -51,6 +69,16 @@ Basic structure of a neural network.
 
 ---
 
+#### What are Recurrent Neural Networks?
+##### Sequence data
+
+<img style="width:auto; height:250px;" title="DNA" src= images/genomic_data.png> <!-- .element: class="fragment" data-fragment-index="1" -->
+<img style="width:auto; height:250px;" title="ECG" src= images/ECG.png><!-- .element: class="fragment" data-fragment-index="2" -->
+<img style="width:auto; height:250px;" title="STOCKS" src= images/stocks.png><!-- .element: class="fragment" data-fragment-index="3" -->
+
+
+
+---
 #### Introduction to recurrent Neural Networks
 
 * <p style="color:black;font-size:24px;line-height:1.25;">RNNs are types of neural networks specialized in processing <b>sequential or time series data.</b></p>
@@ -594,7 +622,15 @@ loss = tf.nn.softmax_cross_entropy_with_logits(y, predicted)
 
 #### Test your knowledge
 
-<img title="mentimeter QR (will appear on the day of the lecture)" src= end_class_questions.png width='300' height='300'>
+<img title="mentimeter QR end" src= images/mentimeter_qr_code_end.png width='300' height='300'>
+
+
+
+---
+
+#### Test your knowledge : results
+
+<div style='position: relative; padding-bottom: 56.25%; padding-top: 35px; height: 0; overflow: hidden;'><iframe sandbox='allow-scripts allow-same-origin allow-presentation' allowfullscreen='true' allowtransparency='true' frameborder='0' height='315' src='https://www.mentimeter.com/embed/33a9bb28cf223cf62de00f7cc0a5737e/58b102e848dc' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' width='420'></iframe></div>
 
 
 
