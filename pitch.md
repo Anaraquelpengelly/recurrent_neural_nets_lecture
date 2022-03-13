@@ -74,7 +74,8 @@ Basic structure of a neural network.
 
 <img style="width:auto; height:250px;" title="DNA" src= images/genomic_data.png> <!-- .element: class="fragment" data-fragment-index="1" -->
 <img style="width:auto; height:250px;" title="ECG" src= images/ECG.png><!-- .element: class="fragment" data-fragment-index="2" -->
-<img style="width:auto; height:250px;" title="STOCKS" src= images/stocks.png><!-- .element: class="fragment" data-fragment-index="3" -->
+<img style="width:auto; height:35px;" title="text" src= images/text.png><!-- .element: class="fragment" data-fragment-index="3" -->
+<img style="width:auto; height:250px;" title="STOCKS" src= images/stocks.png><!-- .element: class="fragment" data-fragment-index="4" -->
 
 
 
