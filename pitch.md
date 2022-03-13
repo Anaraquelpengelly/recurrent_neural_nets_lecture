@@ -13,16 +13,21 @@
 #### Course structure
 
 <ol style="color:black;font-size:40px;line-height:1.7;">
-<li>What are recurrent Neural Networks?</li> 
+<li>What are recurrent Neural Networks?</li>
+<!-- .element: class="fragment" data-fragment-index="1" --> 
 
 <li>Different types of RNNs</li>
+<!-- .element: class="fragment" data-fragment-index="2" -->
 
 <li>What is Back-propagation Through Time?</li>
+<!-- .element: class="fragment" data-fragment-index="3" -->
 
 <li>Long Short Term Memory (LSTM) networks</li>
+<!-- .element: class="fragment" data-fragment-index="4" -->
 
 <li>Applications of RNNs</li>
 </ol>
+<!-- .element: class="fragment" data-fragment-index="5" -->
 
 
 
@@ -148,7 +153,7 @@ Basic structure of a neural network.
 ##### recurrent network equations 
 ###### Single layer example
 <img style="width:auto; height:230px;" title="n_n_eq" src= images/unrolled_rNN_alone.png>
-<p><img style="width:auto; height:25px;" title="rnn_eq" src= images/eq_1.svg></p>
+<p><img src="https://latex.codecogs.com/svg.image?y_{t}=&space;\mathit{g}(W_{2}\phi(W_{1}\mathit{x_{t}}&plus;V_{1}O_{t-1})&space;)" title="https://latex.codecogs.com/svg.image?y_{t}= \mathit{g}(W_{2}\phi(W_{1}\mathit{x_{t}}+V_{1}O_{t-1}) )" /></p>
 <ul style="color:black;font-size:18px;line-height:1.25;"><p> Recurrent networks share parameters across each layer of the network. While feed-forward networks have different weights across each node, recurrent neural networks share the same weight parameter within each layer of the network.</p>
 <p> Many-to-many recurrent network: the number of outputs is the same as the number of inputs (example: translation).</p>
 </ul>
@@ -245,6 +250,19 @@ tf.keras.layers.SimpleRNN(rnn_units)
 
 ---
 
+#### Main Features of RNNs
+<ul>
+<li>They can handle inputs of variable lengths.</li>
+<li>They can capture and model long-term dependencies.</li>
+<li>They can capture differences in sequence order.</li>
+<li>Share parameters (weights) across the sequence.</li>
+<li>They are trained using Back-propagation Through Time.</li>
+</ul>
+
+
+
+---
+
 ### What is Back Propagation Through Time (BPTT)?
 
 
@@ -335,7 +353,7 @@ For exploding gradients, gradient clipping (i.e. re-scaling: if the gradient get
 <ul>
 <li><p style="color:black;font-size:30px;line-height:1.25;"> 
 Change the activation function to functions like ReLU. </p></li>
-<li><p style="color:black;font-size:30px;line-height:1.25;">Weight initialisation to the identity matrix and thereby initialise the biases to zero.</p></li>
+<li><p style="color:black;font-size:30px;line-height:1.25;">Weight initialisation to the identity matrix.</p></li>
 <li><p style="color:black;font-size:30px;line-height:1.25;">Use gated cells to control what information is passed through, i.e. Long Short Term Memory (LSTM) networks and Gated Recurrent Unit (GRU) networks.</p></li>
 </ul>
 
@@ -373,6 +391,15 @@ In standard RNNs each module contains a simple computation node
 <img style="width:auto; height:400px;" title="lstm_layer" src= images/lstm_layer.png>
 
 <p style="color:black;font-size:32px;line-height:1.25;"> Information can be added or removed through gates, which let information through via for example sigmoid neural net layers and pointwise multiplication.</p>
+
+
+
+---
+
+#### Long short-term memory (LSTM)
+##### What are gates?
+<img style="width:auto; height:250px;" title="lstm_gate" src= images/lstm_gate.png>
+<p style="color:black;font-size:32px;line-height:1.25;"> Gates are neural nodes that contain a sigmoid function followed by point wise multiplication.</p>
 
 
 
