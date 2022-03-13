@@ -349,10 +349,16 @@ Change the activation function to functions like ReLU. </p></li>
 
 ---
 
+#### Standard RNN
+In standard RNNs each module contains a simple computation node
+<img style="width:auto; height:300px;" title="rnn_layer" src= images/rnn_lstm_shape.png>
+
+
+
+---
+
 #### Variant RNN architectures
 ##### Long short-term memory (LSTM)
-
-<img style="width:auto; height:300px;" title="rnn_layer" src= images/simple_rnn_layer.png>
 
 <img style="width:auto; height:300px;" title="lstm_layer" src= images/lstm_layer.png>
 
