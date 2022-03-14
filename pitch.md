@@ -14,20 +14,11 @@
 
 <ol style="color:black;font-size:40px;line-height:1.7;">
 <li>What are recurrent Neural Networks?</li>
-<!-- .element: class="fragment" data-fragment-index="1" --> 
-
 <li>Different types of RNNs</li>
-<!-- .element: class="fragment" data-fragment-index="2" -->
-
 <li>What is Back-propagation Through Time?</li>
-<!-- .element: class="fragment" data-fragment-index="3" -->
-
 <li>Long Short Term Memory (LSTM) networks</li>
-<!-- .element: class="fragment" data-fragment-index="4" -->
-
 <li>Applications of RNNs</li>
 </ol>
-<!-- .element: class="fragment" data-fragment-index="5" -->
 
 
 
